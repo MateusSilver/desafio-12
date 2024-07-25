@@ -19,6 +19,16 @@ body {
   min-height: 100vh;
 }
 
+.foto#img01 {
+  background-image: url("imagens/background001.jpg");
+  background-position: right center;
+}
+
+.foto#img02 {
+  background-image: url("imagens/background002.jpg");
+  background-position: center center;
+}
+
 header {
   background-color: black;
   color: white;
@@ -43,6 +53,10 @@ section {
   font-size: 2vw;
 }
 
+section > p {
+  padding-bottom: 1em;
+}
+
 section.normal {
   background-color: white;
   color: black;
@@ -51,12 +65,15 @@ section.normal {
 section.foto {
   background-color: rgb(53, 52, 52);
   color: white;
+  text-shadow: 2px 2px 0px black;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section.foto p {
   background-color: rgba(0, 0, 0, 0.4);
   max-width: 50vw;
-  padding: 20px;
 }
 
 a {
